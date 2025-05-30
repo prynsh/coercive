@@ -1,12 +1,14 @@
-import './App.css'
-import Home from './components/Home'
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/Home'; // Create this component
+import Experience from './components/Experience';
 
 function App() {
   return (
-    <>
-    <Home/>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/experience" element={<Experience />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

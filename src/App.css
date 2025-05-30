@@ -49,7 +49,26 @@ body{
   background-color: black;
   transition: background-color 0.8s ease;
 }
+/*
+circle
+*/
+.expanding-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #e4f5b3;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: expandOut 0.8s ease forwards;
+  z-index: 10;
+}
 
+@keyframes expandOut {
+  to {
+    width: 2000px;
+    height: 2000px;
+  }
+}
 @keyframes subtle-float {
   0%,
   100% {
