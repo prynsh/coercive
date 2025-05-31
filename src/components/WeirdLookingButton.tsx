@@ -58,9 +58,9 @@ const MenuButton: React.FC<MenuButtonProps> = ({ onClick }) => {
         <div className={`absolute inset-0 bg-[#e4f5b3] transition-transform duration-400 origin-left
           ${firstPillHovered || menuPillHovered ? 'scale-x-100' : 'scale-x-0'}`} 
         />
-        <span className={`font-base text-2xl tracking-wide px-6 z-10 transition-colors duration-400 whitespace-nowrap
+        <span className={`font-base text-2xl raleway-font tracking-wide px-6 z-10 transition-colors duration-400 whitespace-nowrap
           ${firstPillHovered || menuPillHovered ? 'text-black' : 'text-[#e4f5b3]'}`}>
-          {firstPillHovered ? <div><span className='italic'>The</span> COERCIVE CONTROL</div> : <div>Menu</div>}
+          {firstPillHovered ? <div><span className='italic '>The</span> COERCIVE CONTROL</div> : <div>Menu</div>}
         </span>
 
         {/* <Menu 

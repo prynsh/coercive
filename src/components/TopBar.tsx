@@ -4,7 +4,7 @@ import WeirdLookingButton from "./WeirdLookingButton";
 function TopBar() {
      const [showTooltip, setShowTooltip] = useState(false)
   return (
-    <div className="main-bg flex justify-between items-center text-white rounded-3xl">
+    <div className=" flex  justify-between items-center bg-transparent text-white  p-2 ">
       <WeirdLookingButton/>
       {!showTooltip && (
         <div className="flex gap-4">
@@ -14,14 +14,14 @@ function TopBar() {
               <div className="absolute left-9 right-2 h-[16px] bg-black top-1/2 -translate-y-1/2 z-0" />
 
               {/* Get Help pill */}
-              <div className="flex items-center justify-center px-10 py-3 z-10 rounded-full cursor-pointer bg-black text-lg text-[#e4f5b3] transition-colors duration-400 ease-in-out hover:bg-[#e4f5b3] hover:text-black">
+              <div className="flex raleway-font items-center justify-center px-10 py-3 z-10 rounded-full cursor-pointer bg-black text-lg text-[#e4f5b3] transition-colors duration-400 ease-in-out hover:bg-[#e4f5b3] hover:text-black">
                 Get help
               </div>
 
               <div className="space-x-5 flex">
                 {/* Quick Exit pill */}
                 <div
-                  className=" relative flex py-3 items-center justify-center px-12 text-lg rounded-full  bg-black z-10 text-[#e4f5b3] cursor-pointer transition-colors duration-400 ease-in-out hover:bg-[#e4f5b3] hover:text-black"
+                  className=" relative flex py-3 raleway-font items-center justify-center px-12 text-lg rounded-full  bg-black z-10 text-[#e4f5b3] cursor-pointer transition-colors duration-400 ease-in-out hover:bg-[#e4f5b3] hover:text-black"
                   onMouseEnter={() => setShowTooltip(true)}
                   
                 >
